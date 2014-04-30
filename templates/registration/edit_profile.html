@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+</head>
+<body>
+
+{% load i18n %}
+
+<div id="container">
+
+  <div class="login">
+    <h2>{% trans 'CUNUC, edit profile' %}</h2>
+  {% block contenido %}
+<form action="/edit_profile/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="{% trans 'Save changes' %}" />
+</form>
+  {% endblock %}
+      {% comment %}
+{% get_current_language as LANGUAGE_CODE %}
+{{ LANGUAGE_CODE }}
+      {% endcomment %}
+  </div>
+</div>
+<a href="{% url 'registration.views.logout_user' %}">Cerrar sesión</a>
+</body>
+</html

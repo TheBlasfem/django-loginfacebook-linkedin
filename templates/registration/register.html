@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register Cunuc</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    {% load staticfiles %}
+	<link rel="stylesheet" href='{% static "css/style.css" %}'>
+</head>
+<body>
+	<main>
+		<div id="register">
+			<aside>
+				<img class="logoform" src="{% static 'images/logoform.jpg' %}" alt="">
+				<h3>Regístrate en cunuc:</h3>
+				<a class="registerface" href="{% url 'registration.views.authfacebook' %}" title="Signup with facebook">Regístrate con Facebook</a>
+                <a class="registerface" href="{% url 'registration.views.authlinkedin' %}" title="Signup with Linkedin">Regístrate con Linkedin</a>
+				<a class="registeremail" href="{% url 'registration.views.register_email' %}">Regístrate con Email</a>
+				<span>¿Ya tienes una cuenta? <a href="{% url 'registration.views.login_user' %}"> Inicia sesión</a></span>
+			</aside>
+		</div>
+	</main>	
+</body>
+</html>

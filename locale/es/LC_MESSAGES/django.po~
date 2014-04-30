@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-30 08:55-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: hackusername/forms.py:26
+msgid "Enter at least one digit and one capital"
+msgstr ""
+
+#: hackusername/forms.py:28
+msgid "Enter at 8 characters"
+msgstr "Ingrese al menos 8 caracteres"
+
+#: hackusername/forms.py:36 registration/forms.py:43
+#, fuzzy
+msgid "Passwords don't match"
+msgstr "Confirmar password"
+
+#: hackusername/models.py:50
+msgid "This email is already registered."
+msgstr "Este email ya está registrado."
+
+#: hackusername/models.py:125
+msgid "A user can only have one role for one event."
+msgstr "Un usuario solo puede tener un rol por evento."
+
+#: registration/forms.py:14 registration/forms.py:147
+msgid "Password"
+msgstr ""
+
+#: registration/forms.py:15 registration/forms.py:65
+msgid "Password confirmation"
+msgstr "Confirmar password"
+
+#: registration/forms.py:21
+msgid "name"
+msgstr "Nombre"
+
+#: registration/forms.py:22 registration/forms.py:92 registration/forms.py:146
+msgid "Enter your email"
+msgstr "Ingresa tu email"
+
+#: registration/forms.py:33
+msgid "Enter at least one digit and one capital for the password"
+msgstr ""
+
+#: registration/forms.py:35
+msgid "Enter at 8 characters for the password"
+msgstr ""
+
+#: registration/forms.py:93
+msgid "Date of birth"
+msgstr "Fecha de nacimiento"
+
+#: registration/forms.py:94
+msgid "Name"
+msgstr "Nombre"
+
+#: registration/forms.py:95
+msgid "Commercial Name"
+msgstr "Nombre Comercial"
+
+#: registration/forms.py:96
+msgid "Business Name"
+msgstr "Razón Social"
+
+#: registration/forms.py:97
+msgid "Address"
+msgstr "Dirección"
+
+#: registration/forms.py:98
+msgid "Phone"
+msgstr "Teléfono"
+
+#: registration/forms.py:99
+msgid "Description"
+msgstr "Descripción"
+
+#: registration/forms.py:104
+msgid "You have to enter your email."
+msgstr "Debes ingresar tu email."
+
+#: registration/forms.py:105
+msgid "Please enter a valid email"
+msgstr "Por favor ingrese un email válido"
+
+#: registration/forms.py:109
+msgid "Please enter a valid url"
+msgstr "Por favor ingrse un url válido"
+
+#: registration/forms.py:112
+msgid "Please enter a valid date YYYY/MM/DD"
+msgstr "Por favor ingrese una fecha válida DD/MM/YYYY"
+
+#: registration/views.py:113
+msgid "username or password incorrect"
+msgstr "usuario o password incorrecto"
+
+#: templates/registration/edit_profile.html:14
+msgid "CUNUC, edit profile"
+msgstr "CUNUC, edita tu perfil"
+
+#: templates/registration/edit_profile.html:18
+msgid "Save changes"
+msgstr "Guardar Cambios"
+
+#: templates/registration/password_reset_complete.html:2
+msgid "Password reset complete"
+msgstr "Reseteo de Password completo"
+
+#: templates/registration/password_reset_complete.html:5
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Tu password ha sido asignado. Puedes loguearte nuevamente."
+
+#: templates/registration/password_reset_complete.html:6
+msgid "Log in"
+msgstr "Inicie Sesión"
+
+#: templates/registration/password_reset_confirm.html:3
+msgid "Setting New password"
+msgstr "Asignando nuevo password"
+
+#: templates/registration/password_reset_confirm.html:7
+msgid "Please enter your new password twice."
+msgstr "Por favor ingrese su nuevo password dos veces."
+
+#: templates/registration/password_reset_confirm.html:8
+msgid "So we can verify you typed it in correctly."
+msgstr "Para que podamos verificar que lo tipeaste correctamente."
+
+#: templates/registration/password_reset_confirm.html:16
+msgid "New password:"
+msgstr "Nuevo password:"
+
+#: templates/registration/password_reset_confirm.html:21
+msgid "Confirm password:"
+msgstr "Confirme su password:"
+
+#: templates/registration/password_reset_confirm.html:26
+msgid "Change my password"
+msgstr "Cambiar mi password"
+
+#: templates/registration/password_reset_confirm.html:31
+msgid "Password reset unsuccessful"
+msgstr "Falló el reseteo de password"
+
+#: templates/registration/password_reset_confirm.html:32
+msgid "The password reset link was invalid,"
+msgstr "El link de reseteo de password es inválido,"
+
+#: templates/registration/password_reset_confirm.html:33
+msgid "possibly because it has already been used."
+msgstr "possiblemente porque ya ha sido usado."
+
+#: templates/registration/password_reset_confirm.html:34
+msgid "Please request a new password reset."
+msgstr "Por favor solicite nuevamente un reseteo de password."
+
+#: templates/registration/password_reset_done.html:2
+msgid "Password reset successful"
+msgstr "Reseteo de password exitoso"
+
+#: templates/registration/password_reset_done.html:5
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted."
+msgstr ""
+"Hemos enviado a tu correo instrucciones para establecer tu password a tu e-"
+"mail "
+
+#: templates/registration/password_reset_done.html:6
+msgid "You should be receiving it shortly."
+msgstr "Debes estar recibiendolo pronto."
+
+#: templates/registration/password_reset_email.html:3
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at "
+msgstr ""
+"Estas recibiendo este e-mail porque solicitaste un reseteo de password para "
+"tu cuenta en "
+
+#: templates/registration/password_reset_email.html:5
+msgid "Please go to the following page and choose a new password:"
+msgstr "Por favor vaya a la siguiente página y elija un nuevo password:"
+
+#: templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "¡Gracias por usar nuestro sitio!"
+
+#: templates/registration/password_reset_email.html:12
+msgid "The team of"
+msgstr "El equipo de"
+
+#: templates/registration/password_reset_email_error.html:2
+msgid "Email don't exist in our database."
+msgstr "El email no existe en nuestra base de datos."
+
+#: templates/registration/password_reset_form.html:2
+msgid "Reset Password"
+msgstr "Resetee su Password"
+
+#: templates/registration/password_reset_form.html:5
+msgid ""
+"Please specify your email address to receive instructions for resetting it."
+msgstr ""
+"Por favor especifique su dirección email para recivir las instrucciones de "
+"reseteo."
+
+#: templates/registration/password_reset_form.html:12
+msgid "E-mail address:"
+msgstr "Dirección E-mail"
+
+#: templates/registration/password_reset_form.html:12
+msgid "Reset password"
+msgstr "Resetear password"
+
+#~ msgid "This qqq."
+#~ msgstr "qqqqqqqqqqqqqqqqqqqqqqqqqq"
+
+#~ msgid "Password Confirmation"
+#~ msgstr "Confirmar password"

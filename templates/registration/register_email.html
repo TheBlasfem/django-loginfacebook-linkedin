@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register Cunuc</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    {% load staticfiles %}
+	<link rel="stylesheet" href='{% static "css/style.css" %}'>
+</head>
+<body>
+	<main>
+		<div id="register">
+			<aside>
+				<img class="logoform" src="{% static 'images/logoform.jpg' %}" alt="">
+				<h3>Regístrate con email:</h3>
+<form id="formregister" action="/register_email/" method="post">{% csrf_token %}
+    {# Include the hidden fields #}
+    {% for hidden in form.hidden_fields %}
+    {{ hidden }}
+    {% endfor %}
+    {# Include the visible fields #}
+    {% for field in form.visible_fields %}
+
+    <div class="errorwrap">{{ field.errors }}
+            {{ field.label_tag }} {{ field }}</div>
+
+    {% endfor %}
+<input type="submit" value="Registrarme" />
+</form>
+				<span>¿Ya tienes una cuenta? <a href="{% url 'registration.views.login_user' %}"> Inicia sesión</a></span>
+			</aside>
+		</div>
+	</main>
+	<script type="text/javascript" src='{% static "js/jquery.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/jquery.validate.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/script.min.js" %}'></script>
+	<script type="text/javascript">myApp.validator.register();</script>
+</body>
+</html>

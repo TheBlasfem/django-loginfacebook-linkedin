@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Cunuc</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    {% load staticfiles %}
+	<link rel="stylesheet" href='{% static "css/style.css" %}'>
+</head>
+<body>
+	<main>
+		<div id="register">
+			<aside>
+				<img class="logoform" src="{% static 'images/logoform.jpg' %}" alt="">
+				<h3>Inicia sesión con email:</h3>
+  {% block contenido %}
+<form id="formlogin" action="/login_email/" method="post">{% csrf_token %}
+    {# Include the hidden fields #}
+    {% for hidden in form.hidden_fields %}
+    {{ hidden }}
+    {% endfor %}	
+
+        <p>{{message}}</p>
+    {# Include the visible fields #}
+    {% for field in form.visible_fields %}
+
+     <div class="errorwrap">{{ field.errors }}
+            {{ field.label_tag }} {{ field }}</div>
+
+    {% endfor %}
+					<a class="passwordforget" href="{% url 'registration.views.my_password_reset' %}">Me olvidé mi password</a>
+<input type="submit" value="Iniciar sesión" />
+</form>
+  {% endblock %}
+				<span>No tienes una cuenta? <a href="{% url 'registration.views.register' %}">Regístrate</a></span>
+			</aside>
+		</div>
+	</main>
+	<script type="text/javascript" src='{% static "js/jquery.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/jquery.validate.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/script.min.js" %}'></script>
+	<script type="text/javascript">myApp.validator.login();</script>
+</body>
+</html>
